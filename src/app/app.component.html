@@ -1,0 +1,19 @@
+<app-header></app-header>
+<main>
+  <ul id="users">
+    @for (user of users(); track user.id) {
+      <li>
+        <app-user
+          [user]="user"
+          [selected]="user.id === userToShow().id"
+          (selectUser)="onSelectUser($event)"
+        ></app-user>
+      </li>
+    }
+  </ul>
+
+  <app-tasks
+    [userId]="userToShow()!.id"
+    [userName]="userToShow()!.name"
+  ></app-tasks>
+</main>
