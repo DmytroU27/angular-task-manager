@@ -9,15 +9,14 @@ import { TasksComponent } from './tasks/tasks.component';
 import { UserModel } from '../models/user.model';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    HeaderComponent,
-    UserComponent,
-    TasksComponent,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+    selector: 'app-root',
+    imports: [
+        HeaderComponent,
+        UserComponent,
+        TasksComponent,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   users = signal(DUMMY_USERS);

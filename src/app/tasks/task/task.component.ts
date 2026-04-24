@@ -8,11 +8,10 @@ import { TasksService } from '../../services/tasks.service';
 import { TaskModel } from '../../../models/task.model';
 
 @Component({
-  selector: 'app-task',
-  standalone: true,
-  imports: [CardComponent, DatePipe],
-  templateUrl: './task.component.html',
-  styleUrl: './task.component.css',
+    selector: 'app-task',
+    imports: [CardComponent, DatePipe],
+    templateUrl: './task.component.html',
+    styleUrl: './task.component.css'
 })
 export class TaskComponent {
   task = input.required<TaskModel>();

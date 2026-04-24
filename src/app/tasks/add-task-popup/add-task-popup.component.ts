@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { TasksService } from '../../services/tasks.service';
 
 @Component({
-  selector: 'app-add-task-popup',
-  standalone: true,
-  imports: [FormsModule],
-  templateUrl: './add-task-popup.component.html',
-  styleUrl: './add-task-popup.component.css',
+    selector: 'app-add-task-popup',
+    imports: [FormsModule],
+    templateUrl: './add-task-popup.component.html',
+    styleUrl: './add-task-popup.component.css'
 })
 export class AddTaskPopupComponent {
   userId = input.required<string>();

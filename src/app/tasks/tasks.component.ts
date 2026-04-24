@@ -6,11 +6,10 @@ import { AddTaskPopupComponent } from './add-task-popup/add-task-popup.component
 import { TasksService } from '../services/tasks.service';
 
 @Component({
-  selector: 'app-tasks',
-  standalone: true,
-  imports: [TaskComponent, AddTaskPopupComponent],
-  templateUrl: './tasks.component.html',
-  styleUrl: './tasks.component.css',
+    selector: 'app-tasks',
+    imports: [TaskComponent, AddTaskPopupComponent],
+    templateUrl: './tasks.component.html',
+    styleUrl: './tasks.component.css'
 })
 export class TasksComponent {
   userId = input.required<string>();
